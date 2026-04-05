@@ -26,7 +26,6 @@
   <img src="logo.png" alt="NextPhase Solutions Logo">
   <h1>NextPhase Solutions</h1>
   <p>Demolition • Junk Removal • Excavation • Construction • Renovation • Septic Tanks • Designs & Permit Drawings</p>
-  <a class="button" href="#contact">Get a Free Quote</a>
 </header>
 
 <section class="services">
