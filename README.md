@@ -678,7 +678,7 @@
                 const suffix = slot.dataset.suffix || '';
                 const styleClass = slot.dataset.style || '';
 
-                // Enforce Click-to-Reveal on EVERY phone slot so zero numbers render automatically on load
+                // Enforce Click-to-Reveal on EVERY phone slot without triggering auto-dialer
                 const btn = document.createElement('button');
                 btn.type = 'button';
                 btn.className = styleClass;
@@ -691,7 +691,6 @@
                     link.innerHTML = `${_phoneSvg}<span>${prefix}${getPhoneFormatted()}${suffix}</span>`;
                     slot.innerHTML = '';
                     slot.appendChild(link);
-                    window.location.href = 'tel:' + raw;
                 });
                 slot.innerHTML = '';
                 slot.appendChild(btn);
